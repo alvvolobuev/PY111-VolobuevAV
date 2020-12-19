@@ -38,7 +38,6 @@ def peek(ind: int = 0) -> Any:
     if 0 <= ind < len(_stack):
         return _stack[-(ind + 1)]
 
-    return None
 
 
 def clear() -> None:
