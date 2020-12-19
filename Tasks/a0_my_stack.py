@@ -3,6 +3,7 @@ My little Stack
 """
 from typing import Any
 
+"""Новая строка"""
 
 def push(elem: Any) -> None:
     """
