@@ -3,6 +3,7 @@ My little Queue
 """
 from typing import Any
 
+_queue = []
 
 def enqueue(elem: Any) -> None:
     """
@@ -11,8 +12,8 @@ def enqueue(elem: Any) -> None:
     :param elem: element to be added
     :return: Nothing
     """
-    print(elem)
-    return None
+    queue.append(elem)
+
 
 
 def dequeue() -> Any:
