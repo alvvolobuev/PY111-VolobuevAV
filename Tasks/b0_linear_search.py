@@ -13,6 +13,13 @@ def min_search(arr: Sequence) -> int:
     :return: index of first occurrence of minimal element in array/ индекс первого вхождения минимального элемента в массив
     """
 
-    min_index = arr.index(min(arr))
+    if not arr:
+        return -1
 
+    min_index = 0
+    minimum = arr[min_index]
+    for index, item in enumerate(arr):
+        if item < minimum:
+            minimum = item
+            min_index = index
     return min_index
